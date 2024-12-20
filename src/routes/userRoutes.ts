@@ -5,8 +5,9 @@ const router = Router();
 const app: Application = express();
 app.use(express.json());
 
-app.post("/", (req: Request, res: Response) => {
-  UserController.create(req, res);
+app.post("/createUser", (req: Request, res: Response) => {
+  console.log("chegou aqui");
+  //   UserController.create(req, res);
 });
 
 export default router;
